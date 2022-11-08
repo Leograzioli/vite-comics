@@ -158,6 +158,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 footer {
 
     .footer-top {
@@ -180,7 +182,7 @@ footer {
                 }
 
                 li {
-                    color: gray;
+                    color: $secondary-color;
                 }
             }
 

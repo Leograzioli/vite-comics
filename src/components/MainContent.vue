@@ -24,13 +24,11 @@ export default {
 <style lang="scss" scoped>
 main {
 
-    .container {
-        padding: 3rem 0;
-
-    }
-
-    // debug
     background-color: black;
     color: white;
+
+    .container {
+        padding: 3rem 0;
+    }
 }
 </style>

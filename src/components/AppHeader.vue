@@ -80,6 +80,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 header {
     padding: 1rem 0;
 
@@ -106,17 +108,17 @@ header {
 
             li.active {
                 position: relative;
-                color: blue;
+                color: $primary-color;
             }
 
             li.active::after {
                 content: "";
                 position: absolute;
                 left: 0;
-                top: 77px;
+                top: 73px;
                 width: 100%;
-                height: 2px;
-                background-color: blue;
+                height: 6px;
+                background-color: $primary-color;
             }
         }
     }

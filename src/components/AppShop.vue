@@ -37,8 +37,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 #shop {
-    background-color: blue;
+    background-color: $primary-color;
     padding: 3rem 0rem;
 
     .container {

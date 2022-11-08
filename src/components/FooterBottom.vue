@@ -39,6 +39,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
+
 .footer-bottom {
     display: flex;
     align-items: center;
@@ -53,7 +55,7 @@ export default {
 
             a {
                 color: white;
-                border: 2px solid blue;
+                border: 2px solid $primary-color;
                 padding: 0.7rem 0.7rem;
             }
         }
@@ -65,7 +67,7 @@ export default {
             column-gap: 1rem;
 
             h3 {
-                color: blue;
+                color: $primary-color;
             }
         }
 
