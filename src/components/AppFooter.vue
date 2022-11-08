@@ -110,7 +110,7 @@ export default {
                         <h3>DC COMICS</h3>
                         <ul>
                             <li v-for="(item, index) in dcComicsData" :key="index">
-                                {{ item.name }}
+                                <a href="">{{ item.name }}</a>
                             </li>
 
                         </ul>
@@ -118,7 +118,7 @@ export default {
                         <h3>SHOP</h3>
                         <ul>
                             <li v-for="(item, index) in shopData" :key="index">
-                                {{ item.name }}
+                                <a href="">{{ item.name }}</a>
                             </li>
                         </ul>
                     </div>
@@ -128,7 +128,7 @@ export default {
                         <h3>DC COMICS</h3>
                         <ul>
                             <li v-for="(item, index) in dcData" :key="index">
-                                {{ item.name }}
+                                <a href="">{{ item.name }}</a>
                             </li>
                         </ul>
                     </div>
@@ -138,7 +138,7 @@ export default {
                         <h3>DC COMICS</h3>
                         <ul>
                             <li v-for="(item, index) in sites" :key="index">
-                                {{ item.name }}
+                                <a href="">{{ item.name }}</a>
                             </li>
                         </ul>
                     </div>

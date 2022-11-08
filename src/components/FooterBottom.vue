@@ -12,16 +12,26 @@ export default {
     <div class="footer-bottom">
         <div class="container flex">
             <div class="ct-left flex">
-                <a>SIGN-UP NOW!</a>
+                <a href="">SIGN-UP NOW!</a>
             </div>
 
             <div class="ct-right flex">
                 <h3>FOLLOW US</h3>
-                <img src="../assets/img/footer-facebook.png" alt="">
-                <img src="../assets/img/footer-twitter.png" alt="">
-                <img src="../assets/img/footer-youtube.png" alt="">
-                <img src="../assets/img/footer-pinterest.png" alt="">
-                <img src="../assets/img/footer-periscope.png" alt="">
+                <a href="">
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../assets/img/footer-twitter.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../assets/img/footer-youtube.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../assets/img/footer-pinterest.png" alt="">
+                </a>
+                <a href="">
+                    <img src="../assets/img/footer-periscope.png" alt="">
+                </a>
 
             </div>
         </div>

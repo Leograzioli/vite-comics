@@ -96,8 +96,13 @@ header {
 
 
         ul {
-            column-gap: 1rem;
+            column-gap: 1.5rem;
             justify-content: end;
+
+            a {
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
 
             li.active {
                 position: relative;

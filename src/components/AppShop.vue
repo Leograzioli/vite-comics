@@ -52,6 +52,8 @@ export default {
 
             p {
                 margin-left: 1rem;
+                margin-right: 2.5rem;
+                font-size: 0.9rem;
             }
 
             img {
