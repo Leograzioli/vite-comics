@@ -1,4 +1,6 @@
 <script>
+import { getGlobalThis } from '@vue/shared';
+
 export default {
     name: "AppHeader",
     data() {
@@ -12,7 +14,7 @@ export default {
                 {
                     name: 'COMICS',
                     href: '/COMICS',
-                    active: true
+                    active: false
                 },
                 {
                     name: 'MOVIES',
@@ -61,6 +63,14 @@ export default {
     methods: {
         setActive(index) {
             this.currentActive = index
+            if (this.currentActive === index) {
+                this.links.forEach(element => {
+                    element.active = false
+                });
+            }
+
+            this.links[this.currentActive].active = true
+
         }
     }
 }
@@ -76,7 +86,7 @@ export default {
 
             <nav class="nav-link">
                 <ul class="flex">
-                    <li v-for="(link, index) in links" :class="currentActive === index ? 'active' : ''" :key="index"
+                    <li v-for="(link, index) in links" :class="{ 'active': link.active }"
                         @click.prevent="setActive(index)">
                         <a href="">{{ link.name }}</a>
                     </li>
