@@ -12,7 +12,7 @@ export default {
                 {
                     name: 'COMICS',
                     href: '/COMICS',
-                    active: false
+                    active: true
                 },
                 {
                     name: 'MOVIES',
@@ -70,8 +70,9 @@ export default {
 
             <nav class="nav-link">
                 <ul class="flex">
-                    <li v-for="(link, index) in links" :key="index">
-                        {{ link.name }}</li>
+                    <li v-for="(link, index) in links" :class="{ 'active': link.active }" :key="index">
+                        <a href="">{{ link.name }}</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -97,6 +98,21 @@ header {
         ul {
             column-gap: 1rem;
             justify-content: end;
+
+            li.active {
+                position: relative;
+                color: blue;
+            }
+
+            li.active::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 77px;
+                width: 100%;
+                height: 2px;
+                background-color: blue;
+            }
         }
     }
 }
