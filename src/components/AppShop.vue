@@ -40,7 +40,7 @@ export default {
         <div class="container flex">
             <div v-for="(item, index) in shopData" :key="index" class="col">
                 <a href="">
-                    <img :src="getPathImg(`../assets/img/buy-comics${item.imgName}`)" alt="">
+                    <img :src="getPathImg(`../assets/img/buy-comics${item.imgName}`)" :alt="item.name">
                     <p>{{ item.name }}</p>
                 </a>
             </div>
