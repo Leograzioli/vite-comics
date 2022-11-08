@@ -1,4 +1,6 @@
 <script>
+import FooterBottom from './FooterBottom.vue';
+
 export default {
     name: 'AppFooter',
     data() {
@@ -87,6 +89,9 @@ export default {
                 },
             ]
         }
+    },
+    components: {
+        FooterBottom
     }
 }
 </script>
@@ -147,10 +152,7 @@ export default {
 
         <!-- footer bottom -->
         <div class="footer-bottom">
-
-            <div class="container">
-                ciao
-            </div>
+            <FooterBottom />
         </div>
     </footer>
 </template>
@@ -193,11 +195,6 @@ footer {
                 top: -120px;
             }
         }
-    }
-
-    .footer-bottom {
-        background-color: #303030;
-
     }
 }
 </style>
