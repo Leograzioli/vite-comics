@@ -1,6 +1,4 @@
 <script>
-import { getGlobalThis } from '@vue/shared';
-
 export default {
     name: "AppHeader",
     data() {
