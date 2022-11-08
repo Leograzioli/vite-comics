@@ -62,10 +62,42 @@ export default {
 
 <template>
     <header>
+        <div class="container flex">
 
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="">
+            </div>
+
+            <nav class="nav-link">
+                <ul class="flex">
+                    <li v-for="(link, index) in links" :key="index">
+                        {{ link.name }}</li>
+                </ul>
+            </nav>
+        </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
+header {
+    padding: 1rem 0;
 
+    .container {
+        align-items: center;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .nav-link {
+        width: 80%;
+
+
+        ul {
+            column-gap: 1rem;
+            justify-content: end;
+        }
+    }
+}
 </style>
