@@ -6,28 +6,23 @@ export default {
             shopData: [
                 {
                     name: 'DIGITAL COMICS',
-                    imgName: '-digital-comics',
-                    imgType: '.png'
+                    imgName: '-digital-comics.png',
                 },
                 {
                     name: 'DC MERCHANDISE',
-                    imgName: '-merchandise',
-                    imgType: '.png'
+                    imgName: '-merchandise.png',
                 },
                 {
                     name: 'SUBSCRIPTION',
-                    imgName: '-subscriptions',
-                    imgType: '.png'
+                    imgName: '-subscriptions.png',
                 },
                 {
                     name: 'COMIC SHOP LOCATOR',
-                    imgName: '-shop-locator',
-                    imgType: '.png'
+                    imgName: '-shop-locator.png',
                 },
                 {
                     name: 'DC POWER VISA',
-                    imgName: '-power-visa',
-                    imgType: '.svg'
+                    imgName: '-power-visa.svg',
                 }
             ]
         }
@@ -45,7 +40,7 @@ export default {
         <div class="container flex">
             <div v-for="(item, index) in shopData" :key="index" class="col">
                 <a href="">
-                    <img :src="getPathImg(`../assets/img/buy-comics${item.imgName}${item.imgType}`)" alt="">
+                    <img :src="getPathImg(`../assets/img/buy-comics${item.imgName}`)" alt="">
                     <p>{{ item.name }}</p>
                 </a>
             </div>
