@@ -57,20 +57,16 @@ export default {
                     active: false
                 },
             ],
-            currentActive: 1
         }
     },
     methods: {
         setActive(index) {
-            this.currentActive = index
-            if (this.currentActive === index) {
-                this.links.forEach(element => {
-                    element.active = false
-                });
-            }
 
-            this.links[this.currentActive].active = true
+            this.links.forEach(element => {
+                element.active = false
+            });
 
+            this.links[index].active = true
         }
     }
 }
