@@ -3,7 +3,38 @@ export default {
     name: 'AppShop',
     data() {
         return {
-
+            shopData: [
+                {
+                    name: 'DIGITAL COMICS',
+                    imgName: '-digital-comics',
+                    imgType: '.png'
+                },
+                {
+                    name: 'DC MERCHANDISE',
+                    imgName: '-merchandise',
+                    imgType: '.png'
+                },
+                {
+                    name: 'SUBSCRIPTION',
+                    imgName: '-subscriptions',
+                    imgType: '.png'
+                },
+                {
+                    name: 'COMIC SHOP LOCATOR',
+                    imgName: '-shop-locator',
+                    imgType: '.png'
+                },
+                {
+                    name: 'DC POWER VISA',
+                    imgName: '-power-visa',
+                    imgType: '.svg'
+                }
+            ]
+        }
+    },
+    methods: {
+        getPathImg(url) {
+            return new URL(url, import.meta.url).href;
         }
     }
 }
@@ -12,26 +43,13 @@ export default {
 <template>
     <section id="shop">
         <div class="container flex">
-            <div class="col">
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                <p>DIGITAL COMICS</p>
+            <div v-for="(item, index) in shopData" :key="index" class="col">
+                <a href="">
+                    <img :src="getPathImg(`../assets/img/buy-comics${item.imgName}${item.imgType}`)" alt="">
+                    <p>{{ item.name }}</p>
+                </a>
             </div>
-            <div class="col">
-                <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                <p>DC MERCHANDISE</p>
-            </div>
-            <div class="col">
-                <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                <p>SUBSCRIPTION</p>
-            </div>
-            <div class="col">
-                <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                <p>COMIC SHOP LOCATOR</p>
-            </div>
-            <div class="col">
-                <img class="visa" src="../assets/img/buy-dc-power-visa.svg" alt="">
-                <p>DC POWER VISA</p>
-            </div>
+
         </div>
     </section>
 </template>
@@ -45,28 +63,27 @@ export default {
 
     .container {
 
+        column-gap: 1rem;
+
         .col {
-            width: calc(100% / 5);
+            width: calc(100% / 5 - 1rem);
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-            p {
-                margin-left: 1rem;
-                margin-right: 2.5rem;
-                font-size: 0.9rem;
-            }
+                p {
+                    margin-left: 1rem;
+                    margin-right: 2.5rem;
+                    font-size: 0.9rem;
+                }
 
-            img {
-                height: 60px;
-            }
-
-            .visa {
-                height: 40px;
+                img {
+                    height: 60px;
+                }
             }
         }
     }
-
 }
 </style>
