@@ -55,6 +55,12 @@ export default {
                     active: false
                 },
             ],
+            currentActive: 1
+        }
+    },
+    methods: {
+        setActive(index) {
+            this.currentActive = index
         }
     }
 }
@@ -70,7 +76,8 @@ export default {
 
             <nav class="nav-link">
                 <ul class="flex">
-                    <li v-for="(link, index) in links" :class="{ 'active': link.active }" :key="index">
+                    <li v-for="(link, index) in links" :class="currentActive === index ? 'active' : ''" :key="index"
+                        @click.prevent="setActive(index)">
                         <a href="">{{ link.name }}</a>
                     </li>
                 </ul>

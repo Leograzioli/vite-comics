@@ -57,7 +57,6 @@ export default {
     padding: 3rem 0rem;
 
     .container {
-
         column-gap: 1rem;
 
         .col {
