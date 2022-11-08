@@ -1,5 +1,7 @@
 <script>
-import { def } from '@vue/shared';
+import AppHeader from './components/AppHeader.vue';
+import MainContent from './components/MainContent.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
   data() {
@@ -8,12 +10,18 @@ export default {
     }
   },
   components: {
-
+    AppHeader,
+    MainContent,
+    AppFooter
   }
 }
 </script>
 
-<template>ciao</template>
+<template>
+  <AppHeader />
+  <MainContent />
+  <AppFooter />
+</template>
 
 <style lang="scss">
 @use "./styles/general.scss" as *;
