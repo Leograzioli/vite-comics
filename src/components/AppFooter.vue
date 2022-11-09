@@ -219,7 +219,7 @@ footer {
 
             img {
                 position: absolute;
-                top: -10px;
+                top: -130px;
             }
         }
     }
