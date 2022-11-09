@@ -7,85 +7,110 @@ export default {
         return {
             dcComicsData: [
                 {
-                    name: 'Characters'
+                    name: 'Characters',
+                    href: '/Characters'
                 },
                 {
-                    name: 'Comics'
+                    name: 'Comics',
+                    href: '/Comics'
                 },
                 {
-                    name: 'Moviess'
+                    name: 'Moviess',
+                    href: '/Moviess'
                 },
                 {
-                    name: 'TV'
+                    name: 'TV',
+                    href: '/TV'
                 },
                 {
-                    name: 'Games'
+                    name: 'Games',
+                    href: '/Games'
                 },
                 {
-                    name: 'Videos'
+                    name: 'Videos',
+                    href: '/Videos'
                 },
                 {
-                    name: 'News'
+                    name: 'News',
+                    href: '/News'
                 }
             ],
             shopData: [
                 {
-                    name: 'Shop DC'
+                    name: 'Shop DC',
+                    href: '/Shop-DC'
                 },
                 {
-                    name: 'Shop DC Collectibles'
+                    name: 'Shop DC Collectibles',
+                    href: '/Shop-DC-Collectibles'
                 }
             ],
             dcData: [
                 {
-                    name: 'Terms Of Use'
+                    name: 'Terms Of Use',
+                    href: '/Terms-Of-Use'
                 },
                 {
-                    name: 'Privacy policy(New)'
+                    name: 'Privacy policy(New)',
+                    href: '/Privacy-policy'
                 },
                 {
-                    name: 'Ad Choices'
+                    name: 'Ad Choices',
+                    href: '/ad-choise'
                 },
                 {
-                    name: 'Advertising'
+                    name: 'Advertising',
+                    href: '/advertising'
                 },
                 {
-                    name: 'Jobs'
+                    name: 'Jobs',
+                    href: '/jobs'
                 },
                 {
-                    name: 'Subscription'
+                    name: 'Subscription',
+                    href: '/subscription'
                 },
                 {
-                    name: 'Talent Workshops'
+                    name: 'Talent Workshops',
+                    href: '/talent-workshops'
                 },
                 {
-                    name: 'CPSC Certificates'
+                    name: 'CPSC Certificates',
+                    href: '/cpsc-certificates'
                 },
                 {
-                    name: 'Ratings'
+                    name: 'Ratings',
+                    href: '/ratings'
                 },
                 {
-                    name: 'Shop Help'
+                    name: 'Shop Help',
+                    href: '/shop-help'
                 },
                 {
-                    name: 'Contact Us'
+                    name: 'Contact Us',
+                    href: '/contact-us'
                 },
             ],
             sites: [
                 {
-                    name: 'DC'
+                    name: 'DC',
+                    href: '/DC'
                 },
                 {
-                    name: 'MAD Magazine'
+                    name: 'MAD Magazine',
+                    href: '/MAD-Magazine'
                 },
                 {
-                    name: 'DC Kids'
+                    name: 'DC Kids',
+                    href: '/DC-Kids'
                 },
                 {
-                    name: 'DC Universe'
+                    name: 'DC Universe',
+                    href: '/DC-Universe'
                 },
                 {
-                    name: 'DC Power Visa'
+                    name: 'DC Power Visa',
+                    href: '/power-visa'
                 },
             ]
         }
@@ -110,7 +135,7 @@ export default {
                         <h3>DC COMICS</h3>
                         <ul>
                             <li v-for="(item, index) in dcComicsData" :key="index">
-                                <a href="">{{ item.name }}</a>
+                                <a :href="item.href">{{ item.name }}</a>
                             </li>
 
                         </ul>
@@ -118,7 +143,7 @@ export default {
                         <h3>SHOP</h3>
                         <ul>
                             <li v-for="(item, index) in shopData" :key="index">
-                                <a href="">{{ item.name }}</a>
+                                <a :href="item.href">{{ item.name }}</a>
                             </li>
                         </ul>
                     </div>
@@ -128,7 +153,7 @@ export default {
                         <h3>DC COMICS</h3>
                         <ul>
                             <li v-for="(item, index) in dcData" :key="index">
-                                <a href="">{{ item.name }}</a>
+                                <a :href="item.href">{{ item.name }}</a>
                             </li>
                         </ul>
                     </div>
@@ -138,7 +163,7 @@ export default {
                         <h3>DC COMICS</h3>
                         <ul>
                             <li v-for="(item, index) in sites" :key="index">
-                                <a href="">{{ item.name }}</a>
+                                <a :href="item.href">{{ item.name }}</a>
                             </li>
                         </ul>
                     </div>
@@ -183,9 +208,9 @@ footer {
 
                 li {
                     color: $secondary-color;
+                    line-height: 1.5rem;
                 }
             }
-
         }
 
         .logo-footer {
@@ -194,7 +219,7 @@ footer {
 
             img {
                 position: absolute;
-                top: -120px;
+                top: -10px;
             }
         }
     }
