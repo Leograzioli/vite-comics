@@ -60,7 +60,7 @@ export default {
         column-gap: 1rem;
 
         .col {
-            width: calc(100% / 5 - 1rem);
+            width: calc(100% / 5);
 
             a {
                 display: flex;

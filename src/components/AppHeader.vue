@@ -82,7 +82,7 @@ export default {
 
             <nav class="nav-link">
                 <ul class="flex">
-                    <li v-for="(link, index) in links" :class="{ 'active': link.active }"
+                    <li v-for="(link, index) in links" :class="{ 'active': link.active }" :key="index"
                         @click.prevent="setActive(index)">
                         <a :href="link.href">{{ link.name }}</a>
                     </li>
@@ -104,6 +104,10 @@ header {
 
     .logo {
         width: 20%;
+
+        img {
+            height: 75px;
+        }
     }
 
     .nav-link {
@@ -119,6 +123,7 @@ header {
                 font-weight: bold;
             }
 
+
             li.active {
                 position: relative;
                 color: $primary-color;
@@ -128,7 +133,7 @@ header {
                 content: "";
                 position: absolute;
                 left: 0;
-                top: 73px;
+                top: 59px;
                 width: 100%;
                 height: 6px;
                 background-color: $primary-color;
