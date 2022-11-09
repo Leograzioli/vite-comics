@@ -70,6 +70,7 @@ export default {
                     margin-left: 1rem;
                     margin-right: 2.5rem;
                     font-size: 0.9rem;
+                    color: white;
                 }
 
                 img {

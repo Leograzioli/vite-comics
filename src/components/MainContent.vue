@@ -101,7 +101,7 @@ export default {
 
         <div class="bg-bottom">
             <div class="container">
-                <div class="row">
+                <div class="row flex">
                     <AppCards v-for="(item, index) in comics" :key="index" :img="item.thumb" :title="item.series" />
                 </div>
 
@@ -150,7 +150,6 @@ main {
             padding: 3rem 0 1rem;
 
             .row {
-                display: flex;
                 flex-wrap: wrap;
                 margin-bottom: 3rem;
 
