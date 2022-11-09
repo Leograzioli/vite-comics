@@ -74,12 +74,14 @@ export default {
     <header>
         <div class="container flex">
 
+            <!-- logo -->
             <div class="logo">
                 <a href="">
                     <img src="../assets/img/dc-logo.png" alt="comics dc">
                 </a>
             </div>
 
+            <!-- nav bar -->
             <nav class="nav-link">
                 <ul class="flex">
                     <li v-for="(link, index) in links" :class="{ 'active': link.active }" :key="index"

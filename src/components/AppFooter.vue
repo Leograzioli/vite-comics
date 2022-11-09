@@ -132,6 +132,8 @@ export default {
 
                     <!-- col  -->
                     <div class="col">
+
+                        <!-- lists -->
                         <h3>DC COMICS</h3>
                         <ul>
                             <li v-for="(item, index) in dcComicsData" :key="index">
@@ -140,6 +142,7 @@ export default {
 
                         </ul>
 
+                        <!-- lists -->
                         <h3>SHOP</h3>
                         <ul>
                             <li v-for="(item, index) in shopData" :key="index">
@@ -150,6 +153,8 @@ export default {
 
                     <!-- col  -->
                     <div class="col">
+
+                        <!-- lists -->
                         <h3>DC COMICS</h3>
                         <ul>
                             <li v-for="(item, index) in dcData" :key="index">
@@ -160,6 +165,8 @@ export default {
 
                     <!-- col  -->
                     <div class="col">
+
+                        <!-- lists -->
                         <h3>DC COMICS</h3>
                         <ul>
                             <li v-for="(item, index) in sites" :key="index">
@@ -169,6 +176,7 @@ export default {
                     </div>
                 </div>
 
+                <!-- footer logo -->
                 <div class="logo-footer">
                     <img src="../assets/img/dc-logo-bg.png" alt="">
                 </div>
@@ -187,6 +195,7 @@ export default {
 
 footer {
 
+    // footer top 
     .footer-top {
         background-image: url(../assets/img/footer-bg.jpg);
         background-repeat: no-repeat;

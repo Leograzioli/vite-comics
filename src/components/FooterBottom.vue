@@ -11,10 +11,13 @@ export default {
 <template>
     <div class="footer-bottom">
         <div class="container flex">
+
+            <!-- container left -->
             <div class="ct-left flex">
                 <a href="">SIGN-UP NOW!</a>
             </div>
 
+            <!-- container right  -->
             <div class="ct-right flex">
                 <h3>FOLLOW US</h3>
                 <a href="">
