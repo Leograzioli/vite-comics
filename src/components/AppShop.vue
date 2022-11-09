@@ -44,7 +44,6 @@ export default {
                     <p>{{ item.name }}</p>
                 </a>
             </div>
-
         </div>
     </section>
 </template>
