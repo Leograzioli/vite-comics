@@ -6,52 +6,52 @@ export default {
             links: [
                 {
                     name: 'CHARACTERS',
-                    href: '/CHARACTERS',
+                    href: '/characters',
                     active: false
                 },
                 {
                     name: 'COMICS',
-                    href: '/COMICS',
+                    href: '/comics',
                     active: false
                 },
                 {
                     name: 'MOVIES',
-                    href: '/MOVIES',
+                    href: '/movies',
                     active: false
                 },
                 {
                     name: 'TV',
-                    href: '/TV',
+                    href: '/tv',
                     active: false
                 },
                 {
                     name: 'GAMES',
-                    href: '/GAMES',
+                    href: '/games',
                     active: false
                 },
                 {
                     name: 'COLLECTIBLES',
-                    href: '/COLLECTIBLES',
+                    href: '/collectibles',
                     active: false
                 },
                 {
                     name: 'VIDEOS',
-                    href: '/VIDEOS',
+                    href: '/videos',
                     active: false
                 },
                 {
                     name: 'FANS',
-                    href: '/FANS',
+                    href: '/fans',
                     active: false
                 },
                 {
                     name: 'NEWS',
-                    href: '/NEWS',
+                    href: '/new',
                     active: false
                 },
                 {
                     name: 'SHOP',
-                    href: '/SHOP',
+                    href: '/shop',
                     active: false
                 },
             ],
@@ -82,7 +82,7 @@ export default {
                 <ul class="flex">
                     <li v-for="(link, index) in links" :class="{ 'active': link.active }"
                         @click.prevent="setActive(index)">
-                        <a href="">{{ link.name }}</a>
+                        <a :href="link.href">{{ link.name }}</a>
                     </li>
                 </ul>
             </nav>
