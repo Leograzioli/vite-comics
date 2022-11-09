@@ -12,7 +12,7 @@ export default {
                 {
                     name: 'COMICS',
                     href: '/comics',
-                    active: false
+                    active: true
                 },
                 {
                     name: 'MOVIES',
@@ -75,7 +75,9 @@ export default {
         <div class="container flex">
 
             <div class="logo">
-                <img src="../assets/img/dc-logo.png" alt="">
+                <a href="">
+                    <img src="../assets/img/dc-logo.png" alt="comics dc">
+                </a>
             </div>
 
             <nav class="nav-link">
