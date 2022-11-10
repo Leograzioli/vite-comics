@@ -91,30 +91,40 @@ export default {
 
 <template>
     <main>
-        <div class="bg-top">
-            <div class="container">
-                <a href="" class="btn">
-                    <h2>CURRENT SERIES</h2>
-                </a>
-            </div>
-        </div>
 
-        <div class="bg-bottom">
-            <div class="container">
-                <div class="row flex">
-                    <AppCards v-for="(item, index) in comics" :key="index" :img="item.thumb" :title="item.series" />
+        <!-- jumbtron  -->
+        <section id="jumbtron">
+            <div class="bg-top">
+                <div class="container">
+                    <a href="" class="btn">
+                        <h2>CURRENT SERIES</h2>
+                    </a>
                 </div>
+            </div>
+        </section>
 
-                <div class="ct-btn">
-                    <div class="btn">
-                        LOAD MORE
+        <!-- products  -->
+        <section id="products">
+            <div class="bg-bottom">
+                <div class="container">
+                    <div class="row flex">
+                        <AppCards v-for="(item, index) in comics" :key="index" :img="item.thumb" :title="item.series" />
+                    </div>
+
+                    <div class="ct-btn">
+                        <div class="btn">
+                            LOAD MORE
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <AppShop />
+        <!-- shop  -->
+        <section id="shop">
+            <AppShop />
+        </section>
     </main>
 </template>
 
