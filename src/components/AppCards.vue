@@ -14,12 +14,12 @@ export default {
 </script>
 
 <template>
-    <div class="col">
+    <li class="col">
         <a href="">
             <img :src="img" :alt="title">
             <p>{{ title }}</p>
         </a>
-    </div>
+    </li>
 </template>
 
 <style lang="scss" scoped>

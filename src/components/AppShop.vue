@@ -37,13 +37,15 @@ export default {
 
 <template>
     <section id="shop">
-        <div class="container flex">
-            <div v-for="(item, index) in shopData" :key="index" class="col">
-                <a href="">
-                    <img :src="getPathImg(`../assets/img/buy-comics${item.imgName}`)" :alt="item.name">
-                    <p>{{ item.name }}</p>
-                </a>
-            </div>
+        <div class="container">
+            <ul class="flex">
+                <li v-for="(item, index) in shopData" :key="index" class="col">
+                    <a href="">
+                        <img :src="getPathImg(`../assets/img/buy-comics${item.imgName}`)" :alt="item.name">
+                        <p>{{ item.name }}</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 </template>
@@ -56,7 +58,9 @@ export default {
     padding: 3rem 0rem;
 
     .container {
-        column-gap: 1rem;
+        .li {
+            column-gap: 1rem;
+        }
 
         .col {
             width: calc(100% / 5);

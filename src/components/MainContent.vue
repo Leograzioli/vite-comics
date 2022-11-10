@@ -107,9 +107,9 @@ export default {
         <section id="products">
             <div class="bg-bottom">
                 <div class="container">
-                    <div class="row flex">
+                    <ul class="row flex">
                         <AppCards v-for="(item, index) in comics" :key="index" :img="item.thumb" :title="item.series" />
-                    </div>
+                    </ul>
 
                     <div class="ct-btn">
                         <div class="btn">
