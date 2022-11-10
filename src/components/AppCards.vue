@@ -15,8 +15,10 @@ export default {
 
 <template>
     <div class="col">
-        <img :src="img" :alt="title">
-        <p>{{ title }}</p>
+        <a href="">
+            <img :src="img" :alt="title">
+            <p>{{ title }}</p>
+        </a>
     </div>
 </template>
 

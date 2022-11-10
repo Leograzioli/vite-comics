@@ -113,7 +113,7 @@ export default {
 
                     <div class="ct-btn">
                         <div class="btn">
-                            LOAD MORE
+                            <a href="">LOAD MORE</a>
                         </div>
                     </div>
                 </div>
